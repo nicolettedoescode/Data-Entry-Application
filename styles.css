@@ -1,0 +1,191 @@
+/* Importing a cute font */
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+body {
+    font-family: 'Bubblegum Sans', cursive; /* Fun and bubbly font */
+    background-color: #fce4ec; /* Light pink background */
+    margin: 0;
+    padding: 20px;
+    color: #5c3d7b; /* Soft purple for text */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff7f8; /* Very light pink background */
+    padding: 30px;
+    border-radius: 30px; /* Rounder corners for a softer look */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Gentle shadow */
+    border: 8px dotted #ff9a9e; /* Dotted pink border */
+    position: relative;
+    overflow: hidden; /* For cute background decorations */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ff4081; /* Bright pink for headings */
+}
+
+h1 {
+    font-size: 3.5rem; /* Larger title size */
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #ff7e7e, #ffb3ba); /* Soft gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1s; /* Simple fade-in animation */
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 15px 0;
+    color: #ff4081; /* Bright pink for subheading */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* More space between inputs */
+}
+
+input {
+    padding: 15px;
+    border: 2px solid #ff9a9e; /* Light pink border */
+    border-radius: 25px; /* Rounder edges */
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow transition */
+    background-color: #ffe4e1; /* Light pink background */
+    outline: none; /* Remove default outline */
+}
+
+input:focus {
+    border-color: #ff6f61; /* Bright pink on focus */
+    box-shadow: 0 0 8px rgba(255, 105, 180, 0.5); /* Soft glow on focus */
+}
+
+button {
+    padding: 12px;
+    background-color: #ff6f61; /* Bright pink */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Round corners */
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for scaling effect */
+    position: relative;
+    overflow: hidden; /* For cute ripple effect */
+}
+
+button:hover {
+    background-color: #ff3d5b; /* Darker pink on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-radius: 15px; /* Round corners for the table */
+    overflow: hidden; /* Round corners for table content */
+}
+
+table, th, td {
+    border: 2px solid #ff9a9e; /* Light pink borders */
+}
+
+th {
+    background-color: #ff6f61; /* Coral for header */
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.2rem; /* Larger header text */
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+tr:hover td {
+    background-color: #ffe4e1; /* Light pink on row hover */
+}
+
+#pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#pageInfo {
+    font-weight: bold;
+    color: #ff6f61; /* Deep pink for pagination info */
+}
+
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    margin: 0 auto;
+    background-color: #ff6f61; /* Coral color for toast */
+    color: #fff;
+    text-align: center;
+    border-radius: 25px;
+    padding: 12px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Kawaii anime elements */
+.kawaii-icon {
+    width: 50px; /* Slightly larger kawaii icon */
+    height: 50px;
+    display: inline-block;
+    background-image: url('https://example.com/cute-anime-character.png'); /* Replace with your kawaii anime icon URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.kawaii-footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #ff6f61; /* Deep pink for footer */
+    background: #ffe4e1; /* Light pink background */
+    padding: 12px;
+    border-radius: 25px; /* Rounded corners for footer */
+}
+
+/* Additional decorative elements */
+.cute-background {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 100px;
+    height: 100px;
+    background: url('https://example.com/kawaii-cloud.png') no-repeat center center; /* Cute cloud icon */
+    background-size: contain;
+    opacity: 0.1; /* Lightly faded */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
